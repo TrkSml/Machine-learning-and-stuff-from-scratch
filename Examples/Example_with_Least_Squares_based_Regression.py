@@ -1,10 +1,10 @@
-#Generate Toy Dataset
 import pylab
 import numpy
 
 #We try to create a signal
 x = numpy.linspace(-1,1,100)
 signal = 2 + numpy.exp(x) + 2 * x * x
+#create a gaussian noise
 noise = numpy.random.normal(0, 0.1, 100)
 y = signal + noise
 
