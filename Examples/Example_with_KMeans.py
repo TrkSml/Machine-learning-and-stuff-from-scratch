@@ -1,3 +1,5 @@
+#__author__=Tarek Samaali
+
 import matplotlib.pyplot as plt
 from matplotlib import style
 style.use('ggplot')
