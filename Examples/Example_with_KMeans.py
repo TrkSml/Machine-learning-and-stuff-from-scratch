@@ -28,11 +28,11 @@ class K_means:
 			for i in range(self.k):
 				self.classifications[i]=[]
 			
-			for featureset in data:
+			for datum in data:
 				
-				distances=[np.linalg.norm(featureset-self.centroids[centroid]) for centroid in self.centroids]
+				distances=[np.linalg.norm(datum-self.centroids[centroid]) for centroid in self.centroids]
 				classification = distances.index(min(distances))
-				self.classifications[classification].append(featureset)
+				self.classifications[classification].append(datum)
 
 			prev_centroids=dict(self.centroids)
 
